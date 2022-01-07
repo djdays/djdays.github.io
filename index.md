@@ -1,1 +1,1 @@
-[Solution to Chapter-12](https://github.com/djdays/sql/ch-12)
+[Solution to Chapter-12](https://djdays.github.io/sql/ch-12)
