@@ -5,8 +5,8 @@ Hospital Management System (HMS) is a python based project built on Django frame
 The users of a hospital management system is divided into three categories:
 
 * Hospital Administration
-* Doctors 
-* Patients
+* Doctors
+* Patient
 
 ## Hospital Administrator
 
@@ -24,7 +24,7 @@ Admin can
 
 Similary, Admin have the following privileges on Patient users.
 
-Admin can
+Admin can:
 
 	* Admit a patient
 	* View patient profile
@@ -33,3 +33,28 @@ Admin can
 	* Similar to admit a patient, Admin can also discharge a patient who was admitted.
 
 Apart from above permissions for admin, he can generate invoice and can download the generated invoice. Generating invoice can be based on medical cost, room charge, doctor charge and other charges. In addition to this, admin can book, view and approve an appointment for a patient.
+
+
+## Doctor
+
+Doctor user can apply for a job in hospital by sign-up in the web app. But for login into the app, his application has to be approved by an admin user. Then only a doctor can login.
+
+Doctor can view:
+
+	* Only view their patient details (symptoms, name, mobile ) assigned to them by admin.
+	* Can view their discharged(by admin) patient list.
+	* Also they can view their Appointments, booked by admin.
+
+Apart from viewing patient and appointments, Doctor can delete their Appointment, when they attended their appointment.
+
+
+## Patient
+
+Patient user can access the web app by sign-up similar to Doctor. But they can login only when an admin approves his account.
+
+Patient can view:
+	* Assigned doctor's details like such as  specialization, mobile and his address.
+	* Also he can view his booked appointment status. He can know whether his appointent is pending or confirmed by admin.
+
+Moreover, patient can view and download his invoice bill as PDF. But for this, the patient has to be discharged by admin. In addition to the above, patient can book his appointments. But to get it confirmed, approval has to be done by admin.
+
