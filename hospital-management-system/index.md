@@ -22,7 +22,7 @@ Admin can
 	* At the same time they can reject the doctor account, if not want to approve it
 	* Finally admin can delete a doctor account
 
-Similarly, Admin have the following privileges on Patient users.
+In addition to above access, Admin have the following privileges on Patient users.
 
 Admin can:
 
