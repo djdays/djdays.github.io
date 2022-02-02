@@ -16,7 +16,7 @@ hms (project main folder)
 └── templates (html frontend pages)
 ```
 
-[PROJECT] here refers to HMS and [APP] refers to HOSPITAL
+**[PROJECT]** here refers to **HMS** and **[APP]** refers to **HOSPITAL**
 
 ## HMS [PROJECT] configuration folder
 
@@ -42,6 +42,7 @@ hms/hms
 	    '...',
 	    '...',
 	    '...',
+	    # app for hospital
 	    'hospital',
 	    'widget_tweaks',
 	]
@@ -65,3 +66,24 @@ hms/hms
 	TIME_ZONE = 'Asia/Kolkata'
 
 ```
+
+### Main entry point for HMS
+
+When the user access the website for HMS, Django looks into ```hms/hms/urls.py``` file and search for an entry in ```python urlpatterns``` list that contains ```python path``` function with empty string as first argument. Then it will load the function mentioned in second argument.
+
+```python
+
+	urlpatterns = [
+	    path('admin/', admin.site.urls),
+	    path('',views.home_view,name=''),
+
+
+	    ...,
+	    ...,
+	]
+
+```
+
+In our case the path function's second arg is ```python views.home_view```. So django will load the corresponding function as homepage.
+
+For other webpages, the first arg in path fucntion will serve the required route and will call the views function in the second arg.
