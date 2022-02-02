@@ -1,7 +1,7 @@
 # HMS Project control flow
 
 
-In the [PROJECT] folder we have the following directory structure
+In the **[PROJECT]** folder we have the following directory structure
 
 ```bash
 hms (project main folder)
@@ -69,7 +69,7 @@ hms/hms
 
 ### Main entry point for HMS
 
-When the user access the website for HMS, Django looks into ```hms/hms/urls.py``` file and search for an entry in ```python urlpatterns``` list that contains ```python path``` function with empty string as first argument. Then it will load the function mentioned in second argument.
+When the user access the website for HMS, Django looks into ```hms/hms/urls.py``` file and search for an entry in ```urlpatterns``` list that contains ```path``` function with empty string as first argument. Then it will load the function mentioned in second argument.
 
 ```python
 
@@ -84,6 +84,6 @@ When the user access the website for HMS, Django looks into ```hms/hms/urls.py``
 
 ```
 
-In our case the path function's second arg is ```python views.home_view```. So django will load the corresponding function as homepage.
+In our case the path function's second arg is ```views.home_view```. So django will load the corresponding function as homepage.
 
 For other webpages, the first arg in path fucntion will serve the required route and will call the views function in the second arg.
