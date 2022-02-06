@@ -52,10 +52,10 @@ Apart from viewing patient and appointments, Doctor can delete their Appointment
 
 Patient user can access the web app by sign-up similar to Doctor. But they can login only when an admin approves his account.
 
-Patient can view:
+Patient can:
 
-	* Assigned doctor's details like such as  specialization, mobile and his address.
-	* Also he can view his booked appointment status. He can know whether his appointent is pending or confirmed by admin.
+	* View assigned doctor's details like such as specialization, mobile and his address.
+	* Also he can view his booked appointment status to know whether his appointent is pending or confirmed by admin.
 
 Moreover, patient can view and download his invoice bill as PDF. But for this, the patient has to be discharged by admin. In addition to the above, patient can book his appointments. But to get it confirmed, approval has to be done by admin.
 
