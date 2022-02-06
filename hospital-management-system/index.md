@@ -14,7 +14,7 @@ Admin user can sign-up their account. With this credentials, they can login to t
 
 Admin user have the following privileges on Doctor users:
 
-Admin can 
+Admin can: 
 
 	* Register a doctor user
 	* Can view the doctor profile
@@ -39,7 +39,7 @@ Apart from above permissions for admin, he can generate invoice and can download
 
 Doctor user can apply for a job in hospital by sign-up in the web app. But for login into the app, his application has to be approved by an admin user. Then only a doctor can login.
 
-Doctor can view:
+Doctor can:
 
 	* Only view their patient details (symptoms, name, mobile ) assigned to them by admin.
 	* Can view their discharged(by admin) patient list.
